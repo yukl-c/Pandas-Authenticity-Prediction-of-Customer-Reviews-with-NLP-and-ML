@@ -19,12 +19,19 @@ I employed Naïve Bayes (NB) as the baseline model, as well as multilayer percep
 The table below shows the accuracy and modeling time for each model:
 
 Model	Accuracy	Time (seconds)
+
 NB	0.58	73.9
+
 MLP	0.60	44.90
+
 NB + MLP	0.61	115.42
+
 NB w/ CV	0.61	369.29
+
 MLP w/ CV	0.58	620.67
+
 NB + MLP w/ CV	0.58	813.57
+
 Exploratory Data Analysis:
 I analyzed the word counts of each record and observed that most comments had less than 1,000 words, indicating a significant skew. I calculated the sentiment index for each record and generated a correlation matrix graph, which revealed a strong positive correlation between length and sentiment (0.66). There were weak positive correlations between rating and polarity (0.27), length and label (0.18), polarity and label (0.17), and rating and label (0.026). A weak negative correlation was observed between length and rating (-0.16).
 
